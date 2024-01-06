@@ -1,0 +1,122 @@
+p@charset "utf-8";
+/* CSS Document */
+	*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	}
+	html,body{
+		height: 100%;
+		width: 100%;	
+		}
+		#main{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			}
+		#left{
+			position: relative;
+			width: 40%;
+			height: 100%;
+			}	
+		#right{
+			width: 60%;
+			height: 100%;
+			background-color: blue;
+		}
+	#tright{
+			display: flex;
+			width: 100%;
+			height: 50%;
+			background-color: white;
+		}
+		#topright{
+			background-image: url(https://plus.unsplash.com/premium_photo-1674228288342-d72cf144e5de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+			background-size: cover;
+			background-position: top;
+			width: 50%;
+			height: 100%;
+			background-color: green;
+		}
+#topleft{
+				background-image: url(https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			width: 50%;
+			height: 100%;
+			background-color: plum;
+		}
+		#bright{
+				background-image: url(https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJ1aXRzfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+			background-size: cover;
+			background-position: center;
+			width: 100%;
+			height: 50%;
+			background-color: black;
+		}
+#lnav{
+	width: 100%;
+	padding: 20px 30px;
+	display: flex;
+	justify-content: space-between;
+}
+#lnavr {
+	font-weight: 600;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#lnavr i{
+	color: royalblue;
+}
+
+#lnavr a{
+	color: black;
+	margin-right: 20px;
+	text-decoration: none;
+	
+}
+#left #midtext{
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%)
+}
+#midtext h1{
+	font-weight: 800;
+	font-size: 50px;
+}
+#midtext p{
+	opacity: .6;
+	padding: 10px 0px;
+}
+#midtext a{
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid black;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 5px 0px;
+	margin-top: 20px;
+	opacity: .6;
+}
+#topright img{
+	object-fit: cover;
+	object-position: center;
+	height: 220px;
+}
+@media(max-width: 500px){
+	#main{
+		flex-direction: column;
+	}
+	#main #left{
+		width: 100%;
+	}
+	#main #right{
+		width: 100%;
+	}
+}
